@@ -1,4 +1,3 @@
-cordova.define("pushwoosh-geozones-cordova-plugin.PushwooshGeozones", function(require, exports, module) {
 //
 //  PushwooshGeozones.js
 //
@@ -42,5 +41,3 @@ PushwooshGeozones.prototype.stopLocationTracking = function(success, fail) {
 };
 
 module.exports = new PushwooshGeozones();
-
-});
