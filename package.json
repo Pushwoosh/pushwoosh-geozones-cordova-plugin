@@ -14,6 +14,9 @@
     "url": "git+https://github.com/Pushwoosh/pushwoosh-geozones-phonegap-plugin"
   },
   "keywords": [
+    "push",
+    "notification",
+    "push notifications",
     "pushwoosh",
     "geozones"
   ],

@@ -1,12 +1,10 @@
 //
-//  PushNotification.m
+// PushwooshGeozones.m
 //
-// Based on the Push Notifications Cordova Plugin by Olivier Louvignes on 06/05/12.
-// Modified by Max Konev on 18/05/12.
+// Pushwoosh, 15/02/19.
 //
-// Pushwoosh Push Notifications Plugin for Cordova iOS
+// Pushwoosh Geozones Plugin for Cordova Android
 // www.pushwoosh.com
-// (c) Pushwoosh 2012
 //
 // MIT Licensed
 

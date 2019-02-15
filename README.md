@@ -7,20 +7,20 @@ Cordova Pushwoosh Push Notifications plugin
 
 ![platforms](https://img.shields.io/badge/platforms-android%20%7C%20ios%20%7C%20wp8%20%7C%20windows%20-yellowgreen.svg)
 
-Cross-Platform push notifications by Pushwoosh for Cordova / PhoneGap
+Pushwoosh Geozones plugin for Cordova / PhoneGap
 
 #### Cordova
 
 Using npm (requires cordova 7.0+):
 
 ```
-cordova plugin add pushwoosh-cordova-plugin@7.12.1
+cordova plugin add pushwoosh-geozones-cordova-plugin@1.0.0
 ```
 
 Using git:
 
 ```
-cordova plugin add https://github.com/Pushwoosh/pushwoosh-phonegap-plugin.git#7.12.1
+cordova plugin add https://github.com/Pushwoosh/pushwoosh-geozones-phonegap-plugin.git#1.0.0
 ```
 
 #### Phonegap
@@ -28,7 +28,7 @@ cordova plugin add https://github.com/Pushwoosh/pushwoosh-phonegap-plugin.git#7.
 Using npm (requires phonegap 7.1+):
 
 ```
-cordova plugin add pushwoosh-cordova-plugin@7.12.1
+cordova plugin add pushwoosh-geozones-ordova-plugin@1.0.0
 ```
 
 ### Guide
@@ -39,8 +39,3 @@ http://docs.pushwoosh.com/docs/cordova-phonegap
 
 http://docs.pushwoosh.com/docs/cordova-api-reference
 
-### Acknowledgments
-Plugman support by Platogo
-
-HUGE thanks to Eddy Verbruggen for all the help with WP8 Phonegap support!!!
-https://github.com/EddyVerbruggen

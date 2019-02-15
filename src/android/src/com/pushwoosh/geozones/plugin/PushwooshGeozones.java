@@ -1,9 +1,9 @@
 //
-// PushNotifications.java
+// PushwooshGeozones.java
 //
-// Pushwoosh, 01/07/12.
+// Pushwoosh, 15/02/19.
 //
-// Pushwoosh Push Notifications Plugin for Cordova Android
+// Pushwoosh Geozones Plugin for Cordova Android
 // www.pushwoosh.com
 //
 // MIT Licensed
