@@ -30,13 +30,6 @@
 			<access origin="*.pushwoosh.com" />
 		</config-file>
 
-		<config-file target="AndroidManifest.xml" parent="/manifest">
-			<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-			<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-			
-			<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-		</config-file>
-
 		<config-file target="AndroidManifest.xml" parent="/manifest/application">
             <meta-data android:name="com.pushwoosh.start_foreground_service" android:value="$ANDROID_IS_ENABLE_FOREGROUND_SERVICE" />
             <meta-data android:name="com.pushwoosh.foreground_service_notification_text" android:value="$ANDROID_NOTIFICATION_FOREGROUND_SERVICE_TEXT" />
