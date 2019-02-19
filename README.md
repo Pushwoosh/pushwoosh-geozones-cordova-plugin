@@ -1,9 +1,9 @@
-Cordova Pushwoosh Push Notifications plugin
+Cordova Pushwoosh Geozones plugin
 ===================================================
 
-[![GitHub release](https://img.shields.io/github/release/Pushwoosh/pushwoosh-phonegap-plugin.svg?style=flat-square)](https://github.com/Pushwoosh/pushwoosh-phonegap-plugin/releases) 
-[![npm](https://img.shields.io/npm/v/pushwoosh-cordova-plugin.svg)](https://www.npmjs.com/package/pushwoosh-cordova-plugin)
-[![license](https://img.shields.io/npm/l/pushwoosh-cordova-plugin.svg)](https://www.npmjs.com/package/pushwoosh-cordova-plugin)
+[![GitHub release](https://img.shields.io/github/release/Pushwoosh/pushwoosh-geozones-cordova-plugin.svg?style=flat-square)](https://github.com/Pushwoosh/pushwoosh-geozones-cordova-plugin/releases) 
+[![npm](https://img.shields.io/npm/v/pushwoosh-geozones-cordova-plugin.svg)](https://www.npmjs.com/package/pushwoosh-geozones-cordova-plugin)
+[![license](https://img.shields.io/npm/l/pushwoosh-geozones-cordova-plugin.svg)](https://www.npmjs.com/package/pushwoosh-geozones-cordova-plugin)
 
 ![platforms](https://img.shields.io/badge/platforms-android%20%7C%20ios%20%7C%20wp8%20%7C%20windows%20-yellowgreen.svg)
 
@@ -20,7 +20,7 @@ cordova plugin add pushwoosh-geozones-cordova-plugin@1.0.0
 Using git:
 
 ```
-cordova plugin add https://github.com/Pushwoosh/pushwoosh-geozones-phonegap-plugin.git#1.0.0
+cordova plugin add https://github.com/Pushwoosh/pushwoosh-geozones-cordova-plugin.git#1.0.0
 ```
 
 #### Phonegap

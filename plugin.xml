@@ -4,7 +4,7 @@
 	<name>PushwooshGeozones</name>
 
 	<description>
-		This plugin allows you to send and receive push notifications assigned to Pushwoosh Geozones. Powered by Pushwoosh (www.pushwoosh.com).
+		This plugin allows you to receive push notifications from Pushwoosh Geozones. Powered by Pushwoosh (www.pushwoosh.com).
 	</description>
 
 	<!-- <engines>
@@ -13,8 +13,8 @@
 
 	<license>MIT</license>
 
-	<repo>https://github.com/Pushwoosh/pushwoosh-geozones-phonegap-plugin</repo>
-	<issue>https://github.com/Pushwoosh/pushwoosh-geozones-phonegap-plugin/issues</issue>
+	<repo>https://github.com/Pushwoosh/pushwoosh-geozones-cordova-plugin</repo>
+	<issue>https://github.com/Pushwoosh/pushwoosh-geozones-cordova-plugin/issues</issue>
 
 	<preference name="ANDROID_IS_ENABLE_FOREGROUND_SERVICE" default="false" />
     <preference name="ANDROID_NOTIFICATION_FOREGROUND_SERVICE_TEXT" default="Work in progress" />

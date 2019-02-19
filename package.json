@@ -1,7 +1,7 @@
 {
   "name": "pushwoosh-geozones-cordova-plugin",
   "version": "1.0.0",
-  "description": "\n    This plugin allows you to send and receive push notifications assigned to Pushwoosh Geozones. Powered by Pushwoosh (www.pushwoosh.com).\n    ",
+  "description": "\n    This plugin allows you to receive push notifications from Pushwoosh Geozones. Powered by Pushwoosh (www.pushwoosh.com).\n    ",
   "cordova": {
     "id": "pushwoosh-geozones-cordova-plugin",
     "platforms": [
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Pushwoosh/pushwoosh-geozones-phonegap-plugin"
+    "url": "git+https://github.com/Pushwoosh/pushwoosh-geozones-cordova-plugin"
   },
   "keywords": [
     "push",
@@ -23,7 +23,7 @@
   "author": "Pushwoosh",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Pushwoosh/pushwoosh-geozones-phonegap-plugin/issues"
+    "url": "https://github.com/Pushwoosh/pushwoosh-geozones-cordova-plugin/issues"
   },
-  "homepage": "https://github.com/Pushwoosh/pushwoosh-geozones-phonegap-plugin#readme"
+  "homepage": "https://github.com/Pushwoosh/pushwoosh-geozones-cordova-plugin#readme"
 }
