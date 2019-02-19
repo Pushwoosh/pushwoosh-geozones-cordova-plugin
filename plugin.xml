@@ -16,6 +16,9 @@
 	<repo>https://github.com/Pushwoosh/pushwoosh-geozones-phonegap-plugin</repo>
 	<issue>https://github.com/Pushwoosh/pushwoosh-geozones-phonegap-plugin/issues</issue>
 
+	<preference name="ANDROID_IS_ENABLE_FOREGROUND_SERVICE" default="false" />
+    <preference name="ANDROID_NOTIFICATION_FOREGROUND_SERVICE_TEXT" default="Work in progress" />
+    <preference name="ANDROID_NOTIFICATION_FOREGROUND_SERVICE_CHANNEL_NAME" default="Foreground service" />
 
 	<js-module src="www/PushwooshGeozones.js" name="PushwooshGeozones">
 		<clobbers target="plugins.PushwooshGeozones" />
@@ -35,31 +38,9 @@
 		</config-file>
 
 		<config-file target="AndroidManifest.xml" parent="/manifest/application">
-			<!-- Location -->
             <meta-data android:name="com.pushwoosh.start_foreground_service" android:value="$ANDROID_IS_ENABLE_FOREGROUND_SERVICE" />
             <meta-data android:name="com.pushwoosh.foreground_service_notification_text" android:value="$ANDROID_NOTIFICATION_FOREGROUND_SERVICE_TEXT" />
             <meta-data android:name="com.pushwoosh.foreground_service_notification_channel_name" android:value="$ANDROID_NOTIFICATION_FOREGROUND_SERVICE_CHANNEL_NAME" />
-            
-			<meta-data android:name="com.pushwoosh.plugin.location"	android:value="com.pushwoosh.location.LocationPlugin" />
-
-			<service android:name="com.pushwoosh.location.network.GeoLocationServiceApi16" />
-
-			<activity
-				android:name="com.pushwoosh.location.internal.utils.ResolutionActivity"
-				android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-
-			<service
-				android:name="com.pushwoosh.location.network.GeoLocationServiceApi21"
-				android:exported="true"
-				android:permission="android.permission.BIND_JOB_SERVICE" />
-                
-            <service android:name="com.pushwoosh.location.foregroundservice.ForegroundService"/>
-            
-			<receiver android:name="com.pushwoosh.location.geofencer.GeofenceReceiver">
-				<intent-filter>
-					<action android:name="$PACKAGE_NAME.action.GEOFENCE" />
-				</intent-filter>
-			</receiver>
 		</config-file>
 
 		<config-file target="res/xml/config.xml" parent="/*">
@@ -71,7 +52,7 @@
 		<source-file src="src/android/src/com/pushwoosh/geozones/plugin/PushwooshGeozones.java"
 			target-dir="src/com/pushwoosh/geozones/plugin" />
 
-		<lib-file src="src/android/libs/pushwoosh-location_v5.12.1.jar"/>
+		<framework src="com.pushwoosh:pushwoosh-location:5.12.1"/>
 	</platform>
 
 	<!-- ios -->
