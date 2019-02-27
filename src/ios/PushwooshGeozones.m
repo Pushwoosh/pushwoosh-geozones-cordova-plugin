@@ -9,7 +9,7 @@
 // MIT Licensed
 
 #import "PushwooshGeozones.h"
-#import "AppDelegate.h"
+#import "PWGeozonesManager.h"
 
 @implementation PushwooshGeozones
 

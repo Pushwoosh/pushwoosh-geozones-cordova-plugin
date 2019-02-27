@@ -4,7 +4,7 @@
 	<name>PushwooshGeozones</name>
 
 	<description>
-		This plugin allows you to receive push notifications from Pushwoosh Geozones. Powered by Pushwoosh (www.pushwoosh.com).
+		This plugin enables Pushwoosh Geozones feature. Powered by Pushwoosh (www.pushwoosh.com).
 	</description>
 
 	<!-- <engines>
@@ -66,8 +66,8 @@
 		<header-file src="src/ios/PushwooshGeozones.h" target-dir="ios"/>
 		<source-file src="src/ios/PushwooshGeozones.m" target-dir="ios"/>
 
-		<header-file src="src/ios/PushwooshGeozones.framework/Versions/A/Headers/PWGeozonesManager.h" target-dir="ios"/>
-		<source-file src="src/ios/PushwooshGeozones.framework/Versions/A/libPushwooshGeozones.a" framework="true"/>
+		<header-file src="src/ios/NativeLibrary/PWGeozonesManager.h" target-dir="ios"/>
+		<source-file src="src/ios/NativeLibrary/libPushwooshGeozones.a" framework="true"/>
 	</platform>
 
 </plugin>
