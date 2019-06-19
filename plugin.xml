@@ -46,7 +46,7 @@
 			target-dir="src/com/pushwoosh/geozones/plugin" />
 
 		<framework src="com.pushwoosh:pushwoosh-location:5.13.0"/>
-		<framework src="com.google.android.gms:play-services-location:+"/>
+		<framework src="com.google.android.gms:play-services-location:(+,17.0.0)"/>
 	</platform>
 
 	<!-- ios -->
