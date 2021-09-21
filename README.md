@@ -14,7 +14,7 @@ Pushwoosh Geozones plugin for Cordova / PhoneGap
 Using npm (requires cordova 7.0+):
 
 ```
-cordova plugin add pushwoosh-geozones-cordova-plugin@1.18.0
+cordova plugin add pushwoosh-geozones-cordova-plugin@1.18.1
 ```
 
 Using git:
@@ -28,7 +28,7 @@ cordova plugin add https://github.com/Pushwoosh/pushwoosh-geozones-cordova-plugi
 Using npm (requires phonegap 7.1+):
 
 ```
-cordova plugin add pushwoosh-geozones-cordova-plugin@1.18.0
+cordova plugin add pushwoosh-geozones-cordova-plugin@1.18.1
 ```
 
 ### Guide
