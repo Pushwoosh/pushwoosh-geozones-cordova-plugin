@@ -1,7 +1,7 @@
-cdvPluginPostBuildExtras.add({
+afterEvaluate {
     rootProject.subprojects {
         if (name == "app") {
             googleServices { disableVersionCheck = true }
         }
     }
-})
+}
