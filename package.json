@@ -1,6 +1,6 @@
 {
   "name": "pushwoosh-geozones-cordova-plugin",
-  "version": "1.18.3",
+  "version": "1.18.4",
   "description": "\n    This plugin enables Pushwoosh Geozones feature. Powered by Pushwoosh (www.pushwoosh.com).\n    ",
   "cordova": {
     "id": "pushwoosh-geozones-cordova-plugin",
