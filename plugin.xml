@@ -1,74 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="pushwoosh-geozones-cordova-plugin" version="1.18.5">
 
-	<name>PushwooshGeozones</name>
+    <name>PushwooshGeozones</name>
 
-	<description>
-		This plugin enables Pushwoosh Geozones feature. Powered by Pushwoosh (www.pushwoosh.com).
-	</description>
+    <description>
+        This plugin enables Pushwoosh Geozones feature. Powered by Pushwoosh (www.pushwoosh.com).
+    </description>
 
-	<!-- <engines>
-			<engine name="cordova" version=">=3.1.0" />
-	</engines> -->
+    <!-- <engines>
+            <engine name="cordova" version=">=3.1.0" />
+    </engines> -->
 
-	<license>MIT</license>
+    <license>MIT</license>
 
-	<repo>https://github.com/Pushwoosh/pushwoosh-geozones-cordova-plugin</repo>
-	<issue>https://github.com/Pushwoosh/pushwoosh-geozones-cordova-plugin/issues</issue>
+    <repo>https://github.com/Pushwoosh/pushwoosh-geozones-cordova-plugin</repo>
+    <issue>https://github.com/Pushwoosh/pushwoosh-geozones-cordova-plugin/issues</issue>
 
-	<preference name="ANDROID_IS_ENABLE_FOREGROUND_SERVICE" default="false" />
+    <preference name="ANDROID_IS_ENABLE_FOREGROUND_SERVICE" default="false" />
     <preference name="ANDROID_NOTIFICATION_FOREGROUND_SERVICE_TEXT" default="Work in progress" />
     <preference name="ANDROID_NOTIFICATION_FOREGROUND_SERVICE_CHANNEL_NAME" default="Foreground service" />
 
-	<js-module src="www/PushwooshGeozones.js" name="PushwooshGeozones">
-		<clobbers target="plugins.PushwooshGeozones" />
-	</js-module>
+    <js-module src="www/PushwooshGeozones.js" name="PushwooshGeozones">
+        <clobbers target="plugins.PushwooshGeozones" />
+    </js-module>
 
-	<!-- android -->
-	<platform name="android">
+    <!-- android -->
+    <platform name="android">
         <framework src="build.gradle" custom="true" type="gradleReference" />
-		<config-file>
-			<access origin="*.pushwoosh.com" />
-		</config-file>
+        <config-file>
+            <access origin="*.pushwoosh.com" />
+        </config-file>
 
-		<config-file target="AndroidManifest.xml" parent="/manifest/application">
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <meta-data android:name="com.pushwoosh.start_foreground_service" android:value="$ANDROID_IS_ENABLE_FOREGROUND_SERVICE" />
             <meta-data android:name="com.pushwoosh.foreground_service_notification_text" android:value="$ANDROID_NOTIFICATION_FOREGROUND_SERVICE_TEXT" />
             <meta-data android:name="com.pushwoosh.foreground_service_notification_channel_name" android:value="$ANDROID_NOTIFICATION_FOREGROUND_SERVICE_CHANNEL_NAME" />
-		</config-file>
+        </config-file>
 
-		<config-file target="res/xml/config.xml" parent="/*">
-			<feature name="PushwooshGeozones">
-				<param name="android-package" value="com.pushwoosh.geozones.plugin.PushwooshGeozones" onload="true" />
-			</feature>
-		</config-file>
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="PushwooshGeozones">
+                <param name="android-package" value="com.pushwoosh.geozones.plugin.PushwooshGeozones" onload="true" />
+            </feature>
+        </config-file>
 
-		<source-file src="src/android/src/com/pushwoosh/geozones/plugin/PushwooshGeozones.java"
-			target-dir="src/com/pushwoosh/geozones/plugin" />
+        <source-file src="src/android/src/com/pushwoosh/geozones/plugin/PushwooshGeozones.java"
+            target-dir="src/com/pushwoosh/geozones/plugin" />
 
-		<framework src="com.pushwoosh:pushwoosh-location:6.6.7"/>
-		<framework src="com.google.android.gms:play-services-location:(+,18.0.99]"/>
-	</platform>
+        <framework src="com.pushwoosh:pushwoosh-location:6.6.16"/>
+        <framework src="com.google.android.gms:play-services-location:(+,21.0.99]"/>
+    </platform>
 
-	<!-- ios -->
-	<platform name="ios">
-		<framework src="CoreLocation.framework" />
+    <!-- ios -->
+    <platform name="ios">
+        <framework src="CoreLocation.framework" />
 
-		<config-file target="config.xml" parent="/*">
-			<feature name="PushwooshGeozones">
-				<param name="ios-package" value="PushwooshGeozones"/>
-			</feature>
-		</config-file>
+        <config-file target="config.xml" parent="/*">
+            <feature name="PushwooshGeozones">
+                <param name="ios-package" value="PushwooshGeozones"/>
+            </feature>
+        </config-file>
 
-		<config-file>
-			<access origin="*.pushwoosh.com" />
-		</config-file>
+        <config-file>
+            <access origin="*.pushwoosh.com" />
+        </config-file>
 
-		<header-file src="src/ios/PushwooshGeozones.h" target-dir="ios"/>
-		<source-file src="src/ios/PushwooshGeozones.m" target-dir="ios"/>
+        <header-file src="src/ios/PushwooshGeozones.h" target-dir="ios"/>
+        <source-file src="src/ios/PushwooshGeozones.m" target-dir="ios"/>
 
-		<header-file src="src/ios/NativeLibrary/PWGeozonesManager.h" target-dir="ios"/>
-		<source-file src="src/ios/NativeLibrary/libPushwooshGeozones.a" framework="true"/>
-	</platform>
+        <header-file src="src/ios/NativeLibrary/PWGeozonesManager.h" target-dir="ios"/>
+        <source-file src="src/ios/NativeLibrary/libPushwooshGeozones.a" framework="true"/>
+    </platform>
 
 </plugin>
